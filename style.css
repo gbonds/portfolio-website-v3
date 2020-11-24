@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+:root {
+  --light: #fffff0; /*overrides default light color*/
+  --accent: #E07A5F;
+}
+
+.bg-light {
+  background-color: var(--light)!important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+/* ==========================================================================
+   Button Styling
+   ========================================================================== */
+   /* used this site to produce styling for btn-accent: https://blog.koalite.com/bbg/ on 11/23/20 */
+
+.btn {
+  border-radius: 3rem!important;
+  text-transform: uppercase;
+}
+
+/* ========== btn-accent (red) ========== */
+.btn-accent { 
+  color: #FFFFFF; 
+  background-color: #E07A5F; 
+  border-color: #E07A5F; 
+} 
+ 
+.btn-accent:hover, 
+.btn-accent:focus, 
+.btn-accent:active, 
+.btn-accent.active, 
+.open .dropdown-toggle.btn-accent { 
+  color: #FFFFFF; 
+  background-color: #C76E56; 
+  border-color: #E07A5F; 
+} 
+ 
+.btn-accent:active, 
+.btn-accent.active, 
+.open .dropdown-toggle.btn-accent { 
+  background-image: none; 
+} 
+ 
+.btn-accent.disabled, 
+.btn-accent[disabled], 
+fieldset[disabled] .btn-accent, 
+.btn-accent.disabled:hover, 
+.btn-accent[disabled]:hover, 
+fieldset[disabled] .btn-accent:hover, 
+.btn-accent.disabled:focus, 
+.btn-accent[disabled]:focus, 
+fieldset[disabled] .btn-accent:focus, 
+.btn-accent.disabled:active, 
+.btn-accent[disabled]:active, 
+fieldset[disabled] .btn-accent:active, 
+.btn-accent.disabled.active, 
+.btn-accent[disabled].active, 
+fieldset[disabled] .btn-accent.active { 
+  background-color: #E07A5F; 
+  border-color: #E07A5F; 
+} 
+ 
+.btn-accent .badge { 
+  color: #E07A5F; 
+  background-color: #FFFFFF; 
+}
+
+/* ========== btn-accent (blue) ========== */
+.btn-subtle { 
+  color: #ffffff; 
+  background-color: #3D405B; 
+  border-color: #3D405B; 
+} 
+ 
+.btn-subtle:hover, 
+.btn-subtle:focus, 
+.btn-subtle:active, 
+.btn-subtle.active, 
+.open .dropdown-toggle.btn-subtle { 
+  color: #ffffff; 
+  background-color: #5F6599; 
+  border-color: #3D405B; 
+} 
+ 
+.btn-subtle:active, 
+.btn-subtle.active, 
+.open .dropdown-toggle.btn-subtle { 
+  background-image: none; 
+} 
+ 
+.btn-subtle.disabled, 
+.btn-subtle[disabled], 
+fieldset[disabled] .btn-subtle, 
+.btn-subtle.disabled:hover, 
+.btn-subtle[disabled]:hover, 
+fieldset[disabled] .btn-subtle:hover, 
+.btn-subtle.disabled:focus, 
+.btn-subtle[disabled]:focus, 
+fieldset[disabled] .btn-subtle:focus, 
+.btn-subtle.disabled:active, 
+.btn-subtle[disabled]:active, 
+fieldset[disabled] .btn-subtle:active, 
+.btn-subtle.disabled.active, 
+.btn-subtle[disabled].active, 
+fieldset[disabled] .btn-subtle.active { 
+  background-color: #3D405B; 
+  border-color: #3D405B; 
+} 
+ 
+.btn-subtle .badge { 
+  color: #3D405B; 
+  background-color: #ffffff; 
+}
+
+/* ==========================================================================
+   General Formatting & Layout
+   ========================================================================== */
+
+body {
+  padding-top: 5rem;
+  background-color: var(--light);
+}
+
+.section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border: 1px solid red;
+}
+
+img {
+  width: 100%;
+  /* this makes image fill the container it's in. */
+}
+
+/* ==========================================================================
+   Homepage Styles
+   ========================================================================== */
+
+
+
