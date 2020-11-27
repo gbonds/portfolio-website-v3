@@ -4,6 +4,10 @@
 :root {
   --light: #fffff0; /*overrides default light color*/
   --accent: #E07A5F;
+  --ff-main: 'Noto Sans JP', sans-serif;
+  --ff-accent: 'Noto Serif JP', serif;
+  --fw-normal: 300;
+  --fw-bolder: 400; /* weight only differs for main font family. accent font family has only one weight. -GB 11.27.20 */
 }
 
 .bg-light {
@@ -14,6 +18,28 @@ ul {
   list-style-type: none;
 }
 
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+body,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-normal);
+}
+
+.navbar-brand,
+h1,
+h2 {
+  font-family: var(--ff-accent);
+  font-weight: var(--ff-bolder); /* this is actually just the Regular fw */
+}
+
+.form-control {
+  font-weight: inherit; /* this overrides default 400 weight for contact form */
+}
 
 /* ==========================================================================
    Button Styling
@@ -23,6 +49,9 @@ ul {
 .btn {
   border-radius: 3rem!important;
   text-transform: uppercase;
+  font-family: inherit;
+  font-weight: inherit;
+  padding: .75rem 1.15rem;
 }
 
 /* ========== btn-accent (red) ========== */
@@ -120,7 +149,7 @@ fieldset[disabled] .btn-subtle.active {
 }
 
 /* ==========================================================================
-   General Formatting & Layout
+  Formatting & Layout
    ========================================================================== */
 
 body {
