@@ -3,7 +3,10 @@
    ========================================================================== */
 :root {
   --light: #fffff0; /*overrides default light color*/
-  --accent: #E07A5F;
+  --accent: #E07A5F; /* used for btn-accent */
+  --color-a: #81b29a;
+  --color-b: #3d405b; /* used for btn-sublte */
+  --color-c: #f2cc8f;
   --ff-main: 'Noto Sans JP', sans-serif;
   --ff-accent: 'Noto Serif JP', serif;
   --fw-normal: 300;
@@ -57,8 +60,8 @@ h2 {
 /* ========== btn-accent (red) ========== */
 .btn-accent { 
   color: #FFFFFF; 
-  background-color: #E07A5F; 
-  border-color: #E07A5F; 
+  background-color: var(--accent); 
+  border-color: var(--accent); 
 } 
  
 .btn-accent:hover, 
@@ -68,7 +71,7 @@ h2 {
 .open .dropdown-toggle.btn-accent { 
   color: #FFFFFF; 
   background-color: #C76E56; 
-  border-color: #E07A5F; 
+  border-color: var(--accent); 
 } 
  
 .btn-accent:active, 
@@ -92,20 +95,20 @@ fieldset[disabled] .btn-accent:active,
 .btn-accent.disabled.active, 
 .btn-accent[disabled].active, 
 fieldset[disabled] .btn-accent.active { 
-  background-color: #E07A5F; 
-  border-color: #E07A5F; 
+  background-color: var(--accent); 
+  border-color: var(--accent); 
 } 
  
 .btn-accent .badge { 
-  color: #E07A5F; 
+  color: var(--accent); 
   background-color: #FFFFFF; 
 }
 
 /* ========== btn-accent (blue) ========== */
 .btn-subtle { 
   color: #ffffff; 
-  background-color: #3D405B; 
-  border-color: #3D405B; 
+  background-color: var(--color-b); 
+  border-color: var(--color-b); 
 } 
  
 .btn-subtle:hover, 
@@ -115,7 +118,7 @@ fieldset[disabled] .btn-accent.active {
 .open .dropdown-toggle.btn-subtle { 
   color: #ffffff; 
   background-color: #5F6599; 
-  border-color: #3D405B; 
+  border-color: var(--color-b); 
 } 
  
 .btn-subtle:active, 
@@ -139,12 +142,12 @@ fieldset[disabled] .btn-subtle:active,
 .btn-subtle.disabled.active, 
 .btn-subtle[disabled].active, 
 fieldset[disabled] .btn-subtle.active { 
-  background-color: #3D405B; 
-  border-color: #3D405B; 
+  background-color: var(--color-b); 
+  border-color: var(--color-b); 
 } 
  
 .btn-subtle .badge { 
-  color: #3D405B; 
+  color: var(--color-b); 
   background-color: #ffffff; 
 }
 
@@ -160,7 +163,6 @@ body {
 .section {
   padding: 3rem 1.5rem;
   text-align: center;
-  border: 1px solid red;
 }
 
 img {
@@ -172,5 +174,29 @@ img {
    Homepage Styles
    ========================================================================== */
 
+   .homepage-card {
+    /* background color is set for each individual section */
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.5rem 5px 0px rgba(0, 0, 0, 0.45), inset 0.25rem 0.5rem 5px 0px rgba(255,255,255,.25);
+    margin: 5rem 0;
+   }
+
+   #featured-work {
+     background-color: var(--color-a);
+   }
+
+   #my-services {
+    background-color: var(--color-b);
+    color: white;
+  }
+
+  #about-me {
+    background-color: var(--color-c);
+  }
 
 
+   @media only screen and (min-width: 1024px) {
+   .homepage-card {
+    padding: 4rem;
+   }
+  }
