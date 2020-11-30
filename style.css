@@ -1,16 +1,21 @@
 /* ==========================================================================
    Global Styles
    ========================================================================== */
+
 :root {
-  --light: #fffff0; /*overrides default light color*/
-  --accent: #E07A5F; /* used for btn-accent */
+  --light: #fffff0;
+  /*overrides default light color*/
+  --accent: #E07A5F;
+  /* used for btn-accent */
   --color-a: #81b29a;
-  --color-b: #3d405b; /* used for btn-sublte */
+  --color-b: #3d405b;
+  /* used for btn-sublte */
   --color-c: #f2cc8f;
   --ff-main: 'Noto Sans JP', sans-serif;
   --ff-accent: 'Noto Serif JP', serif;
   --fw-normal: 300;
-  --fw-bolder: 400; /* weight only differs for main font family. accent font family has only one weight. -GB 11.27.20 */
+  --fw-bolder: 400;
+  /* weight only differs for main font family. accent font family has only one weight. -GB 11.27.20 */
 }
 
 .bg-light {
@@ -24,30 +29,37 @@ ul {
 /* ==========================================================================
    Typography
    ========================================================================== */
-body,
-h3,
-h4,
-h5,
-h6 {
+
+body, h3, h4, h5, h6 {
   font-family: var(--ff-main);
   font-weight: var(--fw-normal);
 }
 
-.navbar-brand,
-h1,
-h2 {
+.navbar-brand, h1, h2 {
   font-family: var(--ff-accent);
-  font-weight: var(--ff-bolder); /* this is actually just the Regular fw */
+  font-weight: var(--ff-bolder);
+  /* this is actually just the Regular fw */
+}
+
+h2 {
+  margin-bottom: 3rem;
+  /* h2 margin-bottom matches the padding-top of section */
+}
+
+h4 {
+  font-size: 1.25rem;
 }
 
 .form-control {
-  font-weight: inherit; /* this overrides default 400 weight for contact form */
+  font-weight: inherit;
+  /* this overrides default 400 weight for contact form */
 }
 
 /* ==========================================================================
    Button Styling
    ========================================================================== */
-   /* used this site to produce styling for btn-accent: https://blog.koalite.com/bbg/ on 11/23/20 */
+
+/* used this site to produce styling for btn-accent: https://blog.koalite.com/bbg/ on 11/23/20 */
 
 .btn {
   border-radius: 3rem!important;
@@ -58,97 +70,59 @@ h2 {
 }
 
 /* ========== btn-accent (red) ========== */
-.btn-accent { 
-  color: #FFFFFF; 
-  background-color: var(--accent); 
-  border-color: var(--accent); 
-} 
- 
-.btn-accent:hover, 
-.btn-accent:focus, 
-.btn-accent:active, 
-.btn-accent.active, 
-.open .dropdown-toggle.btn-accent { 
-  color: #FFFFFF; 
-  background-color: #C76E56; 
-  border-color: var(--accent); 
-} 
- 
-.btn-accent:active, 
-.btn-accent.active, 
-.open .dropdown-toggle.btn-accent { 
-  background-image: none; 
-} 
- 
-.btn-accent.disabled, 
-.btn-accent[disabled], 
-fieldset[disabled] .btn-accent, 
-.btn-accent.disabled:hover, 
-.btn-accent[disabled]:hover, 
-fieldset[disabled] .btn-accent:hover, 
-.btn-accent.disabled:focus, 
-.btn-accent[disabled]:focus, 
-fieldset[disabled] .btn-accent:focus, 
-.btn-accent.disabled:active, 
-.btn-accent[disabled]:active, 
-fieldset[disabled] .btn-accent:active, 
-.btn-accent.disabled.active, 
-.btn-accent[disabled].active, 
-fieldset[disabled] .btn-accent.active { 
-  background-color: var(--accent); 
-  border-color: var(--accent); 
-} 
- 
-.btn-accent .badge { 
-  color: var(--accent); 
-  background-color: #FFFFFF; 
+
+.btn-accent {
+  color: #FFFFFF;
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-accent:hover, .btn-accent:focus, .btn-accent:active, .btn-accent.active, .open .dropdown-toggle.btn-accent {
+  color: #FFFFFF;
+  background-color: #C76E56;
+  border-color: var(--accent);
+}
+
+.btn-accent:active, .btn-accent.active, .open .dropdown-toggle.btn-accent {
+  background-image: none;
+}
+
+.btn-accent.disabled, .btn-accent[disabled], fieldset[disabled] .btn-accent, .btn-accent.disabled:hover, .btn-accent[disabled]:hover, fieldset[disabled] .btn-accent:hover, .btn-accent.disabled:focus, .btn-accent[disabled]:focus, fieldset[disabled] .btn-accent:focus, .btn-accent.disabled:active, .btn-accent[disabled]:active, fieldset[disabled] .btn-accent:active, .btn-accent.disabled.active, .btn-accent[disabled].active, fieldset[disabled] .btn-accent.active {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-accent .badge {
+  color: var(--accent);
+  background-color: #FFFFFF;
 }
 
 /* ========== btn-accent (blue) ========== */
-.btn-subtle { 
-  color: #ffffff; 
-  background-color: var(--color-b); 
-  border-color: var(--color-b); 
-} 
- 
-.btn-subtle:hover, 
-.btn-subtle:focus, 
-.btn-subtle:active, 
-.btn-subtle.active, 
-.open .dropdown-toggle.btn-subtle { 
-  color: #ffffff; 
-  background-color: #5F6599; 
-  border-color: var(--color-b); 
-} 
- 
-.btn-subtle:active, 
-.btn-subtle.active, 
-.open .dropdown-toggle.btn-subtle { 
-  background-image: none; 
-} 
- 
-.btn-subtle.disabled, 
-.btn-subtle[disabled], 
-fieldset[disabled] .btn-subtle, 
-.btn-subtle.disabled:hover, 
-.btn-subtle[disabled]:hover, 
-fieldset[disabled] .btn-subtle:hover, 
-.btn-subtle.disabled:focus, 
-.btn-subtle[disabled]:focus, 
-fieldset[disabled] .btn-subtle:focus, 
-.btn-subtle.disabled:active, 
-.btn-subtle[disabled]:active, 
-fieldset[disabled] .btn-subtle:active, 
-.btn-subtle.disabled.active, 
-.btn-subtle[disabled].active, 
-fieldset[disabled] .btn-subtle.active { 
-  background-color: var(--color-b); 
-  border-color: var(--color-b); 
-} 
- 
-.btn-subtle .badge { 
-  color: var(--color-b); 
-  background-color: #ffffff; 
+
+.btn-subtle {
+  color: #ffffff;
+  background-color: var(--color-b);
+  border-color: var(--color-b);
+}
+
+.btn-subtle:hover, .btn-subtle:focus, .btn-subtle:active, .btn-subtle.active, .open .dropdown-toggle.btn-subtle {
+  color: #ffffff;
+  background-color: #5F6599;
+  border-color: var(--color-b);
+}
+
+.btn-subtle:active, .btn-subtle.active, .open .dropdown-toggle.btn-subtle {
+  background-image: none;
+}
+
+.btn-subtle.disabled, .btn-subtle[disabled], fieldset[disabled] .btn-subtle, .btn-subtle.disabled:hover, .btn-subtle[disabled]:hover, fieldset[disabled] .btn-subtle:hover, .btn-subtle.disabled:focus, .btn-subtle[disabled]:focus, fieldset[disabled] .btn-subtle:focus, .btn-subtle.disabled:active, .btn-subtle[disabled]:active, fieldset[disabled] .btn-subtle:active, .btn-subtle.disabled.active, .btn-subtle[disabled].active, fieldset[disabled] .btn-subtle.active {
+  background-color: var(--color-b);
+  border-color: var(--color-b);
+}
+
+.btn-subtle .badge {
+  color: var(--color-b);
+  background-color: #ffffff;
 }
 
 /* ==========================================================================
@@ -174,29 +148,54 @@ img {
    Homepage Styles
    ========================================================================== */
 
-   .homepage-card {
-    /* background color is set for each individual section */
-    border-radius: 1rem;
-    box-shadow: 0.25rem 0.5rem 5px 0px rgba(0, 0, 0, 0.45), inset 0.25rem 0.5rem 5px 0px rgba(255,255,255,.25);
-    margin: 5rem 0;
-   }
+.homepage-card {
+  /* background color is set for each individual section */
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.5rem 5px 0px rgba(0, 0, 0, 0.45), inset 0.25rem 0.5rem 5px 0px rgba(255, 255, 255, .25);
+  margin: 5rem 0;
+}
 
-   #featured-work {
-     background-color: var(--color-a);
-   }
+#featured-work {
+  background-color: var(--color-a);
+}
 
-   #my-services {
-    background-color: var(--color-b);
-    color: white;
-  }
+#my-services {
+  background-color: var(--color-b);
+  color: white;
+}
 
-  #about-me {
-    background-color: var(--color-c);
-  }
+.service-icon {
+  font-size: 3.5rem;
+  /* .service-icon has different styling for desktop */
+}
 
+#featured-work li {
+  padding: .5rem 0;
+}
 
-   @media only screen and (min-width: 1024px) {
-   .homepage-card {
+.featured-work-icon {
+  font-size: 1.5rem;
+  padding: .25rem;
+}
+
+#about-me {
+  background-color: var(--color-c);
+}
+
+.connect-icon {
+  font-size: 2rem;
+  /* .connect-icon has different styling for desktop */  
+}
+
+@media only screen and (min-width: 1024px) {
+  .homepage-card {
     padding: 4rem;
-   }
   }
+  .service-icon {
+    font-size: 4.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .connect-icon {
+    font-size: 3rem;
+  }
+}
