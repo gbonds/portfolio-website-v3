@@ -147,6 +147,10 @@ img {
 /* ==========================================================================
    Homepage Styles
    ========================================================================== */
+#hero h1 {
+  font-size: 4rem;
+  /* #lets-connect h2 has different styling for desktop */
+}
 
 .homepage-card {
   /* background color is set for each individual section */
@@ -182,6 +186,11 @@ img {
   background-color: var(--color-c);
 }
 
+#lets-connect h2 {
+  font-size: 3rem;
+  /* #lets-connect h2 has different styling for desktop */
+}
+
 .connect-icon {
   font-size: 2rem;
   /* .connect-icon has different styling for desktop */  
@@ -194,6 +203,9 @@ img {
   .service-icon {
     font-size: 4.5rem;
     margin-bottom: 1.25rem;
+  }
+  #lets-connect h2 {
+    font-size: 4rem;
   }
   .connect-icon {
     font-size: 3rem;
