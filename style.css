@@ -6,9 +6,11 @@
   --light: #fffff0;
   /*overrides default light color*/
   --accent: #E07A5F;
+  --accent-dark: #C76E56;
   /* used for btn-accent */
   --color-a: #81b29a;
   --color-b: #3d405b;
+  --color-b-light: #5F6599;
   /* used for btn-sublte */
   --color-c: #f2cc8f;
   --ff-main: 'Noto Sans JP', sans-serif;
@@ -60,9 +62,45 @@ a {
   font-weight: var(--fw-bolder);
 }
 
+a:hover {
+  color: var(--accent-dark);
+}
+
 footer p {
   font-size: .75rem;
 }
+
+/* ==========================================================================
+  Formatting & Layout
+   ========================================================================== */
+
+   body {
+    padding-top: 5rem;
+    background-color: var(--light);
+  }
+  
+  .section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+    /* this makes image fill the container it's in. */
+  }
+
+  .cta-button {
+    margin: 0 1.5rem;
+    /* #cta-button has different styling for desktop */
+  }
+
+  @media only screen and (min-width: 1024px) {
+    /* desktop styling for general formatting and layout */
+    .cta-button {
+      margin: 0 6rem 1rem 6rem;
+    }
+  }
+  
 
 /* ==========================================================================
    Button Styling
@@ -88,8 +126,8 @@ footer p {
 
 .btn-accent:hover, .btn-accent:focus, .btn-accent:active, .btn-accent.active, .open .dropdown-toggle.btn-accent {
   color: #FFFFFF;
-  background-color: #C76E56;
-  border-color: var(--accent);
+  background-color: var(--accent-dark);
+  border-color: var(--accent-dark);
 }
 
 .btn-accent:active, .btn-accent.active, .open .dropdown-toggle.btn-accent {
@@ -116,8 +154,8 @@ footer p {
 
 .btn-subtle:hover, .btn-subtle:focus, .btn-subtle:active, .btn-subtle.active, .open .dropdown-toggle.btn-subtle {
   color: #ffffff;
-  background-color: #5F6599;
-  border-color: var(--color-b);
+  background-color: var(--color-b-light);
+  border-color: var(--color-b-light);
 }
 
 .btn-subtle:active, .btn-subtle.active, .open .dropdown-toggle.btn-subtle {
@@ -132,25 +170,6 @@ footer p {
 .btn-subtle .badge {
   color: var(--color-b);
   background-color: #ffffff;
-}
-
-/* ==========================================================================
-  Formatting & Layout
-   ========================================================================== */
-
-body {
-  padding-top: 5rem;
-  background-color: var(--light);
-}
-
-.section {
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
-
-img {
-  width: 100%;
-  /* this makes image fill the container it's in. */
 }
 
 /* ==========================================================================
@@ -191,11 +210,6 @@ img {
   padding: .25rem;
 }
 
-#featured-work .btn {
-  margin: 0 1.5rem;
-  /* #feat-work button has different styling for desktop */
-}
-
 #about-me {
   background-color: var(--color-c);
 }
@@ -205,17 +219,15 @@ img {
   /* #lets-connect h2 has different styling for desktop */
 }
 
-.connect-icon {
+.lets-connect__social-icon {
   font-size: 2rem;
   /* .connect-icon has different styling for desktop */  
 }
 
 @media only screen and (min-width: 1024px) {
+  /* desktop styling for Homepage */
   .homepage-card {
     padding: 4rem;
-  }
-  #featured-work .btn {
-    margin: 0 6rem 1rem 6rem;
   }
   .service-icon {
     font-size: 4.5rem;
@@ -224,7 +236,7 @@ img {
   #lets-connect h2 {
     font-size: 4rem;
   }
-  .connect-icon {
+  .lets-connect__social-icon {
     font-size: 3rem;
   }
 }
