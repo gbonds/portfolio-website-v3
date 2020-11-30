@@ -55,6 +55,11 @@ h4 {
   /* this overrides default 400 weight for contact form */
 }
 
+a {
+  color: var(--accent);
+  font-weight: var(--fw-bolder);
+}
+
 footer p {
   font-size: .75rem;
 }
@@ -186,7 +191,7 @@ img {
   padding: .25rem;
 }
 
-#featured-work button {
+#featured-work .btn {
   margin: 0 1.5rem;
   /* #feat-work button has different styling for desktop */
 }
@@ -209,7 +214,7 @@ img {
   .homepage-card {
     padding: 4rem;
   }
-  #featured-work button {
+  #featured-work .btn {
     margin: 0 6rem 1rem 6rem;
   }
   .service-icon {
