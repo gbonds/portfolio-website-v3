@@ -50,7 +50,7 @@
 
   <main role="main" class="container">
 
-    <div class="section col-md-6 offset-md-3 text-left" id="hero">
+    <div class="section hero col-md-6 offset-md-3 text-left">
       <h1 class="mb-4">Hello there.</h1>
       <p class="lead">My name is Grace Bonds. I'm a web developer based in Philadelphia.</p>
     </div>
@@ -60,21 +60,20 @@
       <div class="row">
         <div class="col-md-6">
           <img class="mb-4 mb-md-0" id="featured-work__img" src="img/sitepic_scp-landingpage-mobile.png" alt="Screenshot of the Sasha Patterson Life Coach website">
-        </div>
+        </div> <!-- .col with featured work image -->
         <div class="col-md-6 text-left d-flex flex-column">
           <h4>Sasha Patterson Coaching</h4>
           <p class="mb-4">Mobile-first informational site for a new service.</p>
           <ul class="mb-5">
-            <li><i class="fas fa-palette featured-work-icon"></i> Web Design</li>
-            <li><i class="fas fa-code featured-work-icon"></i> Static Site Development</li>
-            <li><i class="fas fa-mobile-alt featured-work-icon"></i> Responsive Design</li>
+            <li><i class="fas fa-palette featured-work__icon"></i> Web Design</li>
+            <li><i class="fas fa-code featured-work__icon"></i> Static Site Development</li>
+            <li><i class="fas fa-mobile-alt featured-work__icon"></i> Responsive Design</li>
           </ul>
           <a class="btn btn-accent mt-auto cta-button" href="portfolio/index.html">View More Work</a>
           <!-- mt-auto class puts button at the bottom of flex-div -->
-        </div>
-      </div>
-
-    </div> <!-- #featured-work -->
+        </div> <!-- .col with featured work info -->
+      </div> <!-- .row -->
+    </div> <!-- .homepage-card #featured-work -->
 
     <div class="section homepage-card" id="my-services">
       <h2 class="text-md-left">My Services</h2>
@@ -85,7 +84,7 @@
         <div class="col-md-4 px-md-4">
           <div class="row mb-3 mb-md-0">
             <div class="col-4 col-md-12">
-              <i class="fas fa-drafting-compass service-icon"></i>
+              <i class="fas fa-drafting-compass my-services__icon"></i>
             </div>
             <div class="col-8 col-md-12">
               <h4>Website Building</h4>
@@ -96,7 +95,7 @@
         <div class="col-md-4 px-md-4">
           <div class="row mb-3 mb-md-0">
             <div class="col-4 col-md-12">
-              <i class="fas fa-comments service-icon"></i>
+              <i class="fas fa-comments my-services__icon"></i>
             </div>
             <div class="col-8 col-md-12">
               <h4>Design Consultation</h4>
@@ -107,7 +106,7 @@
         <div class="col-md-4 px-md-4">
           <div class="row mb-3 mb-md-0">
             <div class="col-4 col-md-12">
-              <i class="fas fa-route service-icon"></i>
+              <i class="fas fa-route my-services__icon"></i>
             </div>
             <div class="col-8 col-md-12">
               <h4>Longterm Planning</h4>
@@ -116,7 +115,7 @@
           </div> <!-- .row -->
         </div> <!-- .col-md-4 [services item ends] -->
       </div> <!-- .row [container of services items ends] -->
-    </div> <!-- #my-services -->
+    </div> <!-- .homepage-card #my-services -->
 
     <div class="section homepage-card" id="about-me">
       <h2 class="text-md-left">About Me</h2>
@@ -133,7 +132,7 @@
           </p>
         </div>
       </div> <!-- .row -->
-    </div> <!-- #about-me -->
+    </div> <!-- .homepage-card #about-me -->
 
     <div class="section cta-section" id="lets-connect">
       <h2>Let's connect.</h2>

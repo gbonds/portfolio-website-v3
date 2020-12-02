@@ -106,7 +106,7 @@ img {
 
 .social-icon {
   font-size: 2rem;
-  /* .connect-icon has different styling for desktop */
+  /* .social-icon has different styling for desktop */
 }
 
 @media only screen and (min-width: 1024px) {
@@ -196,9 +196,9 @@ img {
    Homepage Styles
    ========================================================================== */
 
-#hero h1 {
+.hero h1 {
   font-size: 4rem;
-  /* #hero h2 has different styling for desktop */
+  /* .hero h1 has different styling for desktop */
 }
 
 .homepage-card {
@@ -212,21 +212,25 @@ img {
   background-color: var(--color-a);
 }
 
+#featured-work__img {
+  border-radius: var(--br-light);
+}
+
 #my-services {
   background-color: var(--color-b);
   color: white;
 }
 
-.service-icon {
+.my-services__icon {
   font-size: 3.5rem;
-  /* .service-icon has different styling for desktop */
+  /* .my-services__icon has different styling for desktop */
 }
 
 #featured-work li {
   padding: .5rem 0;
 }
 
-.featured-work-icon {
+.featured-work__icon {
   font-size: 1.5rem;
   padding: .25rem;
 }
@@ -237,10 +241,13 @@ img {
 
 @media only screen and (min-width: 1024px) {
   /* desktop styling for Homepage */
+  .hero h1 {
+    font-size: 5rem;
+  }
   .homepage-card {
     padding: 4rem;
   }
-  .service-icon {
+  .my-services__icon {
     font-size: 4.5rem;
     margin-bottom: 1.25rem;
   }
