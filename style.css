@@ -257,21 +257,22 @@ img {
 
 .image {
   display: block;
-  width: 100%;
-  height: auto;
-  /* will this mess up other BS formatting or img formatting set in global styles? */
+  height: 100%;
+  /* setting 100% height ensures that each image matches height of row */
+  object-fit: cover;
+  object-position: 0 0;
+  /* object-fit makes img fit space and clips it, -position at 0 0 has it aligned top left */
   transition: .5s ease;
   /* TODO how to make image get bigger on hover? https://jsfiddle.net/cshao/Lrqu8L0q/1/ */
 }
+
 
 .image-info-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+  left: 15px;
+  right: 15px;
   opacity: 0;
   transition: .5s ease;
   background-color: gray;
