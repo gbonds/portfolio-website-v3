@@ -40,8 +40,10 @@ body, h3, h4, h5, h6 {
 
 .navbar-brand, h1, h2 {
   font-family: var(--ff-accent);
-  font-weight: var(--ff-bolder);
-  /* this is actually just the Regular fw */
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
 }
 
 h2 {
@@ -53,8 +55,14 @@ h4 {
   font-size: 1.25rem;
 }
 
+a.nav-link {
+  text-transform: uppercase;
+  font-weight: var(--fw-normal);
+}
+
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 a {
@@ -92,6 +100,7 @@ body {
 img {
   width: 100%;
   /* this makes image fill the container it's in. */
+  border-radius: var(--br-light);
 }
 
 .cta-button {
@@ -212,10 +221,6 @@ img {
   background-color: var(--color-a);
 }
 
-#featured-work__img {
-  border-radius: var(--br-light);
-}
-
 #my-services {
   background-color: var(--color-b);
   color: white;
@@ -272,14 +277,12 @@ img {
   height: 100%;
   /* setting 100% height ensures that each image matches height of row */
   box-shadow: var(--box-shadow);
-  border-radius: var(--br-light);
   object-fit: cover;
   object-position: 0 0;
   /* object-fit makes img fit space and clips it, -position at 0 0 has it aligned top left */
   transition: .5s ease;
   /* TODO how to make image get bigger on hover? https://jsfiddle.net/cshao/Lrqu8L0q/1/ */
 }
-
 
 .image-info-overlay {
   position: absolute;
@@ -288,6 +291,7 @@ img {
   left: 15px;
   right: 15px;
   border-radius: var(--br-light);
+  /* matches the border-radius for all img */
   opacity: 0;
   transition: .5s ease;
   background-color: gray;
@@ -314,5 +318,5 @@ img {
 }
 
 /* ==========================================================================
-   Styling for Tablet/Desktop
+   Project Page Styles
    ========================================================================== */
