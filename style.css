@@ -18,6 +18,11 @@
   --fw-normal: 300;
   --fw-bolder: 400;
   /* weight only differs for main font family. accent font family has only one weight. -GB 11.27.20 */
+  --box-shadow: 0.25rem 0.5rem 5px 0px rgba(0, 0, 0, 0.45);
+  --box-shadow-dark: 0.25rem 0.5rem 5px 1.5px rgba(0, 0, 0, 0.55);
+  --box-highlight: inset 0.25rem 0.5rem 5px 0px rgba(255, 255, 255, .25);
+  --br-heavy: 1rem;
+  --br-light: .35rem;
 }
 
 .bg-light {
@@ -182,8 +187,8 @@ img {
 
 .homepage-card {
   /* background color is set for each individual section */
-  border-radius: 1rem;
-  box-shadow: 0.25rem 0.5rem 5px 0px rgba(0, 0, 0, 0.45), inset 0.25rem 0.5rem 5px 0px rgba(255, 255, 255, .25);
+  border-radius: var(--br-heavy);
+  box-shadow: var(--box-shadow), var(--box-highlight);
   margin: 5rem 0;
 }
 
@@ -259,6 +264,8 @@ img {
   display: block;
   height: 100%;
   /* setting 100% height ensures that each image matches height of row */
+  box-shadow: var(--box-shadow);
+  border-radius: var(--br-light);
   object-fit: cover;
   object-position: 0 0;
   /* object-fit makes img fit space and clips it, -position at 0 0 has it aligned top left */
@@ -273,6 +280,7 @@ img {
   bottom: 0;
   left: 15px;
   right: 15px;
+  border-radius: var(--br-light);
   opacity: 0;
   transition: .5s ease;
   background-color: gray;
@@ -281,6 +289,7 @@ img {
 
 .image-container:hover .image-info-overlay {
   opacity: .85;
+  box-shadow: var(--box-shadow-dark);
 }
 
 .image-info-text {
