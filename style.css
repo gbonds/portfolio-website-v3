@@ -24,12 +24,8 @@
   background-color: var(--light)!important;
 }
 
-ul {
-  list-style-type: none;
-}
-
 /* ==========================================================================
-   Typography
+   Global Typography & Text Styling
    ========================================================================== */
 
 body, h3, h4, h5, h6 {
@@ -52,9 +48,8 @@ h4 {
   font-size: 1.25rem;
 }
 
-.form-control {
-  font-weight: inherit;
-  /* this overrides default 400 weight for contact form */
+ul {
+  list-style-type: none;
 }
 
 a {
@@ -70,43 +65,47 @@ footer p {
   font-size: .75rem;
 }
 
+.form-control {
+  font-weight: inherit;
+  /* this overrides default 400 weight for contact form */
+}
+
 /* ==========================================================================
-  Formatting & Layout
+  Global Formatting & Layout
    ========================================================================== */
 
-   body {
-    padding-top: 5rem;
-    background-color: var(--light);
-  }
-  
-  .section {
-    padding: 3rem 1.5rem;
-    text-align: center;
-  }
-  
-  img {
-    width: 100%;
-    /* this makes image fill the container it's in. */
-  }
+body {
+  padding-top: 5rem;
+  background-color: var(--light);
+}
 
+.section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  /* this makes image fill the container it's in. */
+}
+
+.cta-button {
+  margin: 0 1.5rem;
+  /* #cta-button has different styling for desktop */
+}
+
+@media only screen and (min-width: 1024px) {
+  /* desktop styling for general formatting and layout */
   .cta-button {
-    margin: 0 1.5rem;
-    /* #cta-button has different styling for desktop */
+    margin: 0 6rem 1rem 6rem;
   }
-
-  @media only screen and (min-width: 1024px) {
-    /* desktop styling for general formatting and layout */
-    .cta-button {
-      margin: 0 6rem 1rem 6rem;
-    }
-  }
-  
+}
 
 /* ==========================================================================
-   Button Styling
+   Global Button Styling (also applies to links with .btn class)
    ========================================================================== */
 
-/* used this site to produce styling for btn-accent: https://blog.koalite.com/bbg/ on 11/23/20 */
+/* used this site to produce styling for btn-accent and .btn-subtle: https://blog.koalite.com/bbg/ on 11/23/20 */
 
 .btn {
   border-radius: 3rem!important;
@@ -175,6 +174,7 @@ footer p {
 /* ==========================================================================
    Homepage Styles
    ========================================================================== */
+
 #hero h1 {
   font-size: 4rem;
   /* #lets-connect h2 has different styling for desktop */
@@ -221,7 +221,7 @@ footer p {
 
 .lets-connect__social-icon {
   font-size: 2rem;
-  /* .connect-icon has different styling for desktop */  
+  /* .connect-icon has different styling for desktop */
 }
 
 @media only screen and (min-width: 1024px) {
@@ -239,4 +239,59 @@ footer p {
   .lets-connect__social-icon {
     font-size: 3rem;
   }
+}
+
+/* ==========================================================================
+   Portfolio Page Styles
+   ========================================================================== */
+
+/* used w3 tutorial for image hover overlay: https://www.w3schools.com/howto/howto_css_image_overlay.asp on 12/2/20 */
+
+.image-container {
+  position: relative;
+  /* need to set width here? */
+  padding: 0 15px;
+  /* padding must be set to 15px on left and right to match the padding of the .col-md-#, otherwise gray overlay is larger than image */
+  
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* will this mess up other BS formatting or img formatting set in global styles? */
+  transition: .5s ease;
+  /* TODO how to make image get bigger on hover? https://jsfiddle.net/cshao/Lrqu8L0q/1/ */
+}
+
+.image-info-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: gray;
+  /* TODO set background-color to color within the color palette */
+}
+
+.image-container:hover .image-info-overlay {
+  opacity: .85;
+}
+
+.image-info-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.image-info-text a {
+  color: var(--color-c);
 }
