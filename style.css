@@ -99,10 +99,26 @@ img {
   /* #cta-button has different styling for desktop */
 }
 
+.cta-section h2 {
+  font-size: 3rem;
+  /* .cta-section h2 has different styling for desktop */
+}
+
+.social-icon {
+  font-size: 2rem;
+  /* .connect-icon has different styling for desktop */
+}
+
 @media only screen and (min-width: 1024px) {
   /* desktop styling for general formatting and layout */
   .cta-button {
     margin: 0 6rem 1rem 6rem;
+  }
+  .cta-section h2 {
+    font-size: 4rem;
+  }
+  .social-icon {
+    font-size: 3rem;
   }
 }
 
@@ -182,7 +198,7 @@ img {
 
 #hero h1 {
   font-size: 4rem;
-  /* #lets-connect h2 has different styling for desktop */
+  /* #hero h2 has different styling for desktop */
 }
 
 .homepage-card {
@@ -219,16 +235,6 @@ img {
   background-color: var(--color-c);
 }
 
-#lets-connect h2 {
-  font-size: 3rem;
-  /* #lets-connect h2 has different styling for desktop */
-}
-
-.lets-connect__social-icon {
-  font-size: 2rem;
-  /* .connect-icon has different styling for desktop */
-}
-
 @media only screen and (min-width: 1024px) {
   /* desktop styling for Homepage */
   .homepage-card {
@@ -237,12 +243,6 @@ img {
   .service-icon {
     font-size: 4.5rem;
     margin-bottom: 1.25rem;
-  }
-  #lets-connect h2 {
-    font-size: 4rem;
-  }
-  .lets-connect__social-icon {
-    font-size: 3rem;
   }
 }
 
@@ -305,3 +305,7 @@ img {
 .image-info-text a {
   color: var(--color-c);
 }
+
+/* ==========================================================================
+   Styling for Tablet/Desktop
+   ========================================================================== */
