@@ -21,6 +21,9 @@
   <!-- Font Awesome kit -->
   <script src="https://kit.fontawesome.com/43198c1f99.js" crossorigin="anonymous"></script>
 
+  <!-- Animate On Scroll (AOS) library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>Grace Bonds Web Development</title>
 </head>
 
@@ -50,16 +53,17 @@
 
   <main role="main" class="container">
 
-    <div class="section hero col-md-6 offset-md-3 text-left">
+    <div class="section hero col-md-6 offset-md-3 text-left" data-aos="fade-up">
       <h1 class="mb-4">Hello there.</h1>
       <p class="lead">My name is Grace Bonds. I'm a web developer based in Philadelphia.</p>
     </div> <!-- .hero -->
 
-    <div class="section homepage-card" id="featured-work">
+    <div class="section homepage-card" id="featured-work" data-aos="fade-up" data-aos-delay="750">
       <h2 class="text-md-left">Featured Work</h2>
       <div class="row">
         <div class="col-md-6">
-          <img class="mb-4 mb-md-0" id="featured-work__img" src="img/sitepic_scp-landingpage-mobile.png" alt="Screenshot of the Sasha Patterson Life Coach website">
+          <img class="mb-4 mb-md-0" id="featured-work__img" src="img/sitepic_scp-landingpage-mobile.png"
+            alt="Screenshot of the Sasha Patterson Life Coach website">
         </div> <!-- .col with featured work image -->
         <div class="col-md-6 text-left d-flex flex-column">
           <h4>Sasha Patterson Coaching</h4>
@@ -75,7 +79,7 @@
       </div> <!-- .row -->
     </div> <!-- .homepage-card #featured-work -->
 
-    <div class="section homepage-card" id="my-services">
+    <div class="section homepage-card" id="my-services" data-aos="fade-up">
       <h2 class="text-md-left">My Services</h2>
       <p class="mb-5 text-md-left"> My work combines creativity and curiosity with efficiency and organization. I'm a
         continuous learner who
@@ -117,11 +121,12 @@
       </div> <!-- .row [container of services items ends] -->
     </div> <!-- .homepage-card #my-services -->
 
-    <div class="section homepage-card" id="about-me">
+    <div class="section homepage-card" id="about-me" data-aos="fade-up">
       <h2 class="text-md-left">About Me</h2>
       <div class="row flex-row-reverse">
         <div class="col-md-6">
-          <img class="mb-4 mb-md-0 rounded-circle" src="img/profile-wissahickon.jpg" alt="Profile picture of Grace on hiking trail">
+          <img class="mb-4 mb-md-0 rounded-circle" src="img/profile-wissahickon.jpg"
+            alt="Profile picture of Grace on hiking trail">
         </div>
         <div class="col-md-6 my-auto px-md-4">
           <p>My work history includes but is not limited to: a global travel startup, an art museum, and a very
@@ -135,21 +140,22 @@
     </div> <!-- .homepage-card #about-me -->
 
     <div class="section cta-section" id="lets-connect">
-      <h2>Let's connect.</h2>
+      <h2 data-aos="fade-up">Let's connect.</h2>
       <div class="row">
-        <div class="col-md-6 d-flex align-items-start justify-content-around mb-5 px-md-4">
-          <a href="mailto:hello@gracebonds.com?subject=Email inquiry from GraceBonds.com" class="btn btn-subtle rounded-circle">
+        <div class="col-md-6 d-flex align-items-start justify-content-around mb-5 px-md-4" data-aos="fade-up" data-aos-delay="100">
+          <a href="mailto:hello@gracebonds.com?subject=Email inquiry from GraceBonds.com"
+            class="btn btn-subtle rounded-circle">
             <i class="far fa-envelope social-icon"></i>
-        </a>
-        <a href="https://github.com/gbonds" target="_blank" class="btn btn-subtle rounded-circle">
+          </a>
+          <a href="https://github.com/gbonds" target="_blank" class="btn btn-subtle rounded-circle">
             <i class="fab fa-github social-icon"></i>
-        </a>
-        <a a href="https://www.linkedin.com/in/grace-bonds-82a38060/" target="_blank"
+          </a>
+          <a a href="https://www.linkedin.com/in/grace-bonds-82a38060/" target="_blank"
             class="btn btn-subtle rounded-circle">
             <i class="fab fa-linkedin-in social-icon"></i>
-        </a>
+          </a>
         </div> <!-- container for social icons -->
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
           <form action="https://formspree.io/f/xeqplwrp" method="POST">
             <div class="row">
               <div class="col-md-6">
@@ -182,9 +188,12 @@
     <p>Grace Bonds | Copyright 2020</p>
   </footer>
 
-
-
-
+  <!-- script to initiate the AOS library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: "true" });
+    // once:true sets the animation to only occur one time during scroll
+  </script>
 
   <!-- Optional JavaScript; choose one of the two! -->
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
