@@ -21,6 +21,9 @@
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/43198c1f99.js" crossorigin="anonymous"></script>
 
+    <!-- Animate On Scroll (AOS) library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Portfolio | Grace Bonds Web Development</title>
 </head>
 
@@ -51,7 +54,7 @@
 
     <main role="main" class="container">
 
-        <div class="section hero col-md-8 offset-md-2 text-left">
+        <div class="section hero col-md-8 offset-md-2 text-left" data-aos="fade-up">
             <h1 class="mb-4">Check out my work.</h1>
             <p class="lead">I would love to help you with constructing or updating a website, consulting on website
                 design, and strategizing for future maintenance of your website.</p>
@@ -59,7 +62,7 @@
 
         <div class="section" id="portfolio-overview">
             <div class="row">
-                <div class="col-md-4 mb-5 image-container">
+                <div class="col-md-4 mb-5 image-container" data-aos="fade-up" data-aos-delay="500">
                     <img class="image" src="../img/sitepic_scp-landingpage-mobile.png"
                         alt="Screenshot of the Sasha Patterson Life Coach website">
                     <div class="image-info-overlay">
@@ -70,7 +73,7 @@
                         </div> <!-- .image-info-text -->
                     </div> <!-- .image-info-overlay -->
                 </div> <!-- .col-md-4 .image-container -->
-                <div class="col-md-8 mb-5 image-container">
+                <div class="col-md-8 mb-5 image-container" data-aos="fade-up" data-aos-delay="700">
                     <img class="image" src="../img/sitepic_unplugged-landingpage-desktop.png"
                         alt="Screenshot of the Unplugged Retreat website">
                     <div class="image-info-overlay">
@@ -83,7 +86,7 @@
                 </div> <!-- .col-md-8 .image-container -->
             </div> <!-- .row with 2 of 4 images -->
             <div class="row flex-row-reverse">
-                <div class="col-md-4 mb-5 image-container">
+                <div class="col-md-4 mb-5 image-container" data-aos="fade-up" data-aos-delay="150">
                     <img class="image" src="../img/sitepic_skunkbio-fullpage-mobile-EDITED.png"
                         alt="Screenshot of the Skunk the Dog website">
                     <div class="image-info-overlay">
@@ -94,7 +97,7 @@
                         </div> <!-- .image-info-text -->
                     </div> <!-- .image-info-overlay -->
                 </div> <!-- .col-md-4 .image-container -->
-                <div class="col-md-8 mb-5 image-container">
+                <div class="col-md-8 mb-5 image-container" data-aos="fade-up" data-aos-delay="300">
                     <img class="image" src="../img/sitepic_keller-landingpage-desktop.png"
                         alt="Screenshot of the Keller Ferments website">
                     <div class="image-info-overlay">
@@ -108,9 +111,10 @@
             </div> <!-- .row with 2 of 4 images -->
         </div> <!-- #portfolio-overview -->
 
-        <div class="section cta-section">
+        <div class="section cta-section" data-aos="fade-up">
             <h2>Looking for more?</h2>
-            <p class="col-md-6 offset-md-3 mb-5">Interested in using my web dev services? Fill out the <a href="https://forms.gle/ZxTCmFK9dHoc91n6A" target="_blank">GET A
+            <p class="col-md-6 offset-md-3 mb-5">Interested in using my web dev services? Fill out the <a
+                    href="https://forms.gle/ZxTCmFK9dHoc91n6A" target="_blank">GET A
                     QUOTE survey</a> to get a conversation going.<br>
                 <br>
                 Curious about how I work? Check out my <a href="https://github.com/gbonds" target="_blank">GitHub
@@ -121,7 +125,8 @@
             </p>
             <div class="row">
                 <div class="col-md-6 mb-5">
-                    <a href="https://forms.gle/ZxTCmFK9dHoc91n6A" target="_blank" class="btn btn-accent d-flex justify-content-center cta-button">Get A Quote</a>
+                    <a href="https://forms.gle/ZxTCmFK9dHoc91n6A" target="_blank"
+                        class="btn btn-accent d-flex justify-content-center cta-button">Get A Quote</a>
                 </div> <!-- container for button -->
                 <div class="col-md-6 d-flex align-items-start justify-content-around mb-5 px-md-4">
                     <a href="mailto:hello@gracebonds.com?subject=Email inquiry from GraceBonds.com"
@@ -145,9 +150,12 @@
         <p>Grace Bonds | Copyright 2020</p>
     </footer>
 
-
-
-
+    <!-- script to initiate the AOS library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration:1000,once:"true"});
+        // once:true sets the animation to only occur one time during scroll
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
