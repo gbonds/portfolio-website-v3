@@ -20,6 +20,8 @@
   /* weight only differs for main font family. accent font family has only one weight. -GB 11.27.20 */
   --box-shadow: 0.25rem 0.5rem 5px 0px rgba(0, 0, 0, 0.45);
   --box-shadow-dark: 0.25rem 0.5rem 5px 1.5px rgba(0, 0, 0, 0.55);
+  --bs-allaround: 0rem 0rem 5px 1px rgba(0, 0, 0, 0.45);
+  --bs-allaround-dark: 0rem 0rem 5px 2px rgba(0, 0, 0, 0.55);
   --box-highlight: inset 0.25rem 0.5rem 5px 0px rgba(255, 255, 255, .25);
   --br-heavy: 1rem;
   --br-light: .35rem;
@@ -276,7 +278,7 @@ img {
   display: block;
   height: 100%;
   /* setting 100% height ensures that each image matches height of row */
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--bs-allaround);
   object-fit: cover;
   object-position: 0 0;
   /* object-fit makes img fit space and clips it, -position at 0 0 has it aligned top left */
@@ -300,7 +302,7 @@ img {
 
 .image-container:hover .image-info-overlay {
   opacity: .85;
-  box-shadow: var(--box-shadow-dark);
+  box-shadow: var(--bs-allaround-dark);
 }
 
 .image-info-text {
@@ -320,3 +322,8 @@ img {
 /* ==========================================================================
    Project Page Styles
    ========================================================================== */
+
+   .project-main-image img,
+   .project-screenshots img {
+     box-shadow: var(--bs-allaround);
+   }
