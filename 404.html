@@ -2,61 +2,100 @@
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <title>Page Not Found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-    }
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
 
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
-    }
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Noto+Serif+JP&display=swap"
+    rel="stylesheet">
 
-    p {
-      margin: 0 auto;
-      width: 280px;
-    }
+  <!-- Font Awesome kit -->
+  <script src="https://kit.fontawesome.com/43198c1f99.js" crossorigin="anonymous"></script>
 
-    @media only screen and (max-width: 280px) {
+  <!-- Animate On Scroll (AOS) library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-      body,
-      p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
-
-    }
-  </style>
+  <title>Page Not Found | Grace Bonds Web Development</title>
 </head>
 
 <body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="index.html">Grace Bonds</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio/index.html">Portfolio <span class="sr-only"></span></a>
+          <!-- NOTE sr-only span is visible to screen readers only -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about-me">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#lets-connect">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main" class="container">
+
+    <div class="section hero col-md-10 offset-md-1 col-lg-8 offset-lg-2 mt-5" id="page-not-found">
+      <div class="row">
+        <div class="mx-auto col-md-4 d-flex justify-content-center align-items-center mb-4" data-aos="flip-left"
+          data-aos-duration=1500>
+          <i class="fas fa-map-signs page-not-found__icon"></i>
+        </div>
+        <div class="col-md-8 text-left" data-aos="fade-up">
+          <h1 class="mb-4">Oopsie.</h1>
+          <p class="lead">Sorry, but the page you were trying to view does not exist.</p>
+        </div>
+      </div> <!-- .row -->
+      <div class="mt-5" data-aos="fade-up" data-aos-delay="150">
+        <a href="index.html"
+          class="btn d-flex justify-content-center cta-button btn-accent">Go Back Home</a>
+      </div> <!-- container for button -->
+    </div> <!-- .hero #page-not-found -->
+  </main><!-- .container -->
+
+  <footer class="text-center mt-5">
+    <p>Grace Bonds | Copyright 2020</p>
+  </footer>
+
+  <!-- script to initiate the AOS library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: "true" });
+    // once:true sets the animation to only occur one time during scroll
+  </script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->

@@ -282,7 +282,6 @@ img {
   /* need to set width here? */
   padding: 0 15px;
   /* padding must be set to 15px on left and right to match the padding of the .col-md-#, otherwise gray overlay is larger than image */
-  
 }
 
 .image {
@@ -334,7 +333,18 @@ img {
    Project Page Styles
    ========================================================================== */
 
-   .project-main-image img,
-   .project-screenshots img {
-     box-shadow: var(--bs-allaround);
-   }
+.project-main-image img, .project-screenshots img {
+  box-shadow: var(--bs-allaround);
+}
+
+/* ==========================================================================
+   404 Page Not Found Styles
+   ========================================================================== */
+
+#page-not-found {
+  height: 80vh;
+}
+
+.page-not-found__icon {
+  font-size: 8rem;
+}
