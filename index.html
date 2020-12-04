@@ -119,9 +119,13 @@
           </div> <!-- .row -->
         </div> <!-- .col-md-4 [services item ends] -->
       </div> <!-- .row [container of services items ends] -->
+      <div id="about-me">
+        <!-- putting #about-me here so About nav link brings you to top of section instead of slightly above h2.-->
+      </div>
     </div> <!-- .homepage-card #my-services -->
 
-    <div class="section homepage-card" id="about-me" data-aos="fade-up">
+    <div class="section homepage-card" id="about-me__card" data-aos="fade-up">
+      <!-- #about-me is placed in above section for link purposes, use #about-me__card for any styling -->
       <h2 class="text-md-left">About Me</h2>
       <div class="row flex-row-reverse">
         <div class="col-md-6">
@@ -139,10 +143,12 @@
       </div> <!-- .row -->
     </div> <!-- .homepage-card #about-me -->
 
-    <div class="section cta-section" id="lets-connect">
+
+    <div class="section cta-section d-flex flex-column justify-content-center" id="lets-connect">
       <h2 data-aos="fade-up">Let's connect.</h2>
       <div class="row">
-        <div class="col-md-6 d-flex align-items-start justify-content-around mb-5 px-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-6 d-flex align-items-start justify-content-around mb-5 px-md-4" data-aos="fade-up"
+          data-aos-delay="100">
           <a href="mailto:hello@gracebonds.com?subject=Email inquiry from GraceBonds.com"
             class="btn btn-subtle rounded-circle">
             <i class="far fa-envelope social-icon"></i>
@@ -179,7 +185,6 @@
           </form>
         </div> <!-- container for contact form -->
       </div> <!-- .row [social icons and contact form] -->
-
     </div> <!-- .cta-section #lets-connect -->
 
   </main><!-- .container -->

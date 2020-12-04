@@ -223,6 +223,13 @@ img {
   background-color: var(--color-a);
 }
 
+#featured-work__img {
+  height: 60vh;
+  object-fit: cover;
+  object-position: 0 0;
+  /* object-fit makes img fit space and clips it, -position at 0 0 has it aligned top left */
+}
+
 #my-services {
   background-color: var(--color-b);
   color: white;
@@ -242,8 +249,12 @@ img {
   padding: .25rem;
 }
 
-#about-me {
+#about-me__card {
   background-color: var(--color-c);
+}
+
+#lets-connect {
+  height: 70vh;
 }
 
 @media only screen and (min-width: 1024px) {
