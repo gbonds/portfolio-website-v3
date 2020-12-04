@@ -21,6 +21,9 @@
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/43198c1f99.js" crossorigin="anonymous"></script>
 
+    <!-- Animate On Scroll (AOS) library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Unplugged Retreat | Portfolio | Grace Bonds Web Development</title>
 </head>
 
@@ -118,9 +121,12 @@
         <p>Grace Bonds | Copyright 2020</p>
     </footer>
 
-
-
-
+    <!-- script to initiate the AOS library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: "true" });
+        // once:true sets the animation to only occur one time during scroll
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
