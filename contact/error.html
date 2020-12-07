@@ -11,7 +11,7 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
-  <link href="style.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -38,11 +38,11 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="portfolio/index.html">Portfolio <span class="sr-only"></span></a>
+          <a class="nav-link" href="../portfolio/index.html">Portfolio <span class="sr-only"></span></a>
           <!-- NOTE sr-only span is visible to screen readers only -->
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about-me">About</a>
+          <a class="nav-link" href="../index.html#about-me">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#lets-connect">Connect</a>
@@ -53,16 +53,16 @@
 
   <main role="main" class="container">
 
-    <div class="section hero col-md-8 offset-md-2 text-left" data-aos="fade-up">
+    <div class="section hero col-md-8 offset-md-2 text-left">
       <h1 class="mb-4">Hello there.</h1>
       <p class="lead">My name is Grace Bonds. I'm a web developer based in Philadelphia.</p>
     </div> <!-- .hero -->
 
-    <div class="section homepage-card" id="featured-work" data-aos="fade-up" data-aos-delay="750">
+    <div class="section homepage-card" id="featured-work">
       <h2 class="text-md-left">Featured Work</h2>
       <div class="row">
         <div class="col-md-6">
-          <img class="mb-4 mb-md-0" id="featured-work__img" src="img/sitepic_scp-landingpage-mobile.png"
+          <img class="mb-4 mb-md-0" id="featured-work__img" src="../img/sitepic_scp-landingpage-mobile.png"
             alt="Screenshot of the Sasha Patterson Life Coach website">
         </div> <!-- .col with featured work image -->
         <div class="col-md-6 text-left d-flex flex-column">
@@ -73,13 +73,13 @@
             <li><i class="fas fa-code featured-work__icon"></i> Static Site Development</li>
             <li><i class="fas fa-mobile-alt featured-work__icon"></i> Responsive Design</li>
           </ul>
-          <a class="btn btn-accent mt-auto cta-button" href="portfolio/index.html">View More Work</a>
+          <a class="btn btn-accent mt-auto cta-button" href="../portfolio/index.html">View More Work</a>
           <!-- mt-auto class puts button at the bottom of flex-div -->
         </div> <!-- .col with featured work info -->
       </div> <!-- .row -->
     </div> <!-- .homepage-card #featured-work -->
 
-    <div class="section homepage-card" id="my-services" data-aos="fade-up">
+    <div class="section homepage-card" id="my-services">
       <h2 class="text-md-left">My Services</h2>
       <p class="mb-5 text-md-left"> My work combines creativity and curiosity with efficiency and organization. I'm a
         continuous learner who
@@ -124,12 +124,12 @@
       </div>
     </div> <!-- .homepage-card #my-services -->
 
-    <div class="section homepage-card" id="about-me__card" data-aos="fade-up">
+    <div class="section homepage-card" id="about-me__card">
       <!-- #about-me is placed in above section for link purposes, use #about-me__card for any styling -->
       <h2 class="text-md-left">About Me</h2>
       <div class="row flex-row-reverse">
         <div class="col-md-6">
-          <img class="mb-4 mb-md-0 rounded-circle" src="img/profile-wissahickon.jpg"
+          <img class="mb-4 mb-md-0 rounded-circle" src="../img/profile-wissahickon.jpg"
             alt="Profile picture of Grace on hiking trail">
         </div>
         <div class="col-md-6 mt-lg-5">
@@ -145,10 +145,9 @@
 
 
     <div class="section cta-section d-flex flex-column justify-content-center" id="lets-connect">
-      <h2 data-aos="fade-up">Let's connect.</h2>
+      <h2>Let's connect.</h2>
       <div class="row">
-        <div class="col-md-6 d-flex align-items-start justify-content-around mb-5 px-md-4" data-aos="fade-up"
-          data-aos-delay="100">
+        <div class="col-md-6 d-flex align-items-start justify-content-around mb-5 px-md-4">
           <a href="mailto:hello@gracebonds.com?subject=Email inquiry from GraceBonds.com"
             class="btn btn-subtle rounded-circle">
             <i class="far fa-envelope social-icon"></i>
@@ -161,28 +160,9 @@
             <i class="fab fa-linkedin-in social-icon"></i>
           </a>
         </div> <!-- container for social icons -->
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <form action="https://app.formking.io/submit/ae5995f8b89e4b9d984a88551e8611ad" method="POST">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label class="sr-only" for="inputName">Name</label>
-                  <input type="text" name="name" class="form-control" id="inputName" placeholder="name">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label class="sr-only" for="inputEmail">Email</label>
-                  <input type="email" name="_replyto" class="form-control" id="inputEmail" placeholder="email">
-                </div>
-              </div>
-            </div> <!-- .row [name and email] -->
-            <div class="form-group">
-              <label class="sr-only" for="inputMessage">Message</label>
-              <input type="text" name="message" class="form-control" id="inputMessage" placeholder="message">
-            </div>
-            <button type="submit" class="btn btn-accent float-right">Submit</button>
-          </form>
+        <div class="col-md-6" data-aos="fade-up">
+            <h4>Oops.</h4>
+            <p>An error has occurred. Please <a href="../index.html#lets-connect">try reloading</a> to submit your message, or try emailing me directly at <a href="mailto:hello@gracebonds.com?subject=Email inquiry from GraceBonds.com">hello [at] gracebonds.com</a>.</p>  
         </div> <!-- container for contact form -->
       </div> <!-- .row [social icons and contact form] -->
     </div> <!-- .cta-section #lets-connect -->
