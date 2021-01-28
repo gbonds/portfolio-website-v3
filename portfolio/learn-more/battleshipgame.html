@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="../../style.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/43198c1f99.js" crossorigin="anonymous"></script>
+
+    <!-- Animate On Scroll (AOS) library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Battleship Game | Portfolio | Grace Bonds Web Development</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="../../index.html">Grace Bonds</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Portfolio <span class="sr-only"></span></a>
+                    <!-- NOTE sr-only span is visible to screen readers only -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#about-me">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#lets-connect">Connect</a>
+                    <!-- TODO update this link, should it go to bottom of page or Homepage Let's Connect section? -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+
+        <div class="section project-hero col-md-8 offset-md-2 text-left" data-aos="fade-up">
+            <h1 class="mb-4">Battleship Game</h1>
+            <p class="lead">Javascript game.</p>
+            <ul class="row my-4">
+                <li class="col-md-6"><i class="fab fa-js-square"></i> JavaScript</li>
+                <li class="col-md-6"><i class="fas fa-code featured-work__icon"></i> Static Site Development</li>
+            </ul> <!-- .row for feat-work__icons -->
+        </div> <!-- .project-hero -->
+
+        <div class="project-main-image" data-aos="fade-up" data-aos-delay="500">
+            <img src="../../img/sitepic_battleship-fullpage-newgame.png" alt="Screenshot of the Battleship game">
+        </div> <!-- .project-main-image -->
+
+        <div class="section project-info row col-md-10 offset-md-1 my-5" data-aos="fade-up">
+            <div class="col-md-8">
+                <p>I designed and developed this concept website for a hypothetical client who is starting a new life
+                    coaching
+                    service.
+                    Goals include establishing the client's brand in a personal and unique way, providing information
+                    about
+                    services, and encouraging customer engagement.<br />
+                    <br />
+                    I designed a mobile-first site with just one page so that visitors can seamlessly scroll from one
+                    section to
+                    the next.
+                    I kept the look and feel of the website as simple as possible, while also keeping it warm and
+                    friendly.
+                    I made use of CSS flexbox to ensure that the design is responsive to any browser size.
+                </p>
+            </div> <!-- .col for website-info text-->
+            <div class="col-md-4">
+                <a href="https://gbonds.github.io/battleship-game/" target="_blank" class="btn btn-subtle">Play Game</a>
+            </div>
+        </div> <!-- .project-info -->
+
+        <div class="row project-screenshots">
+            <div class="col-md-6" data-aos="fade-up">
+                <div>
+                    <h4 class="ml-2">Active Game View:</h4>
+                    <img src="../../img/sitepic_battleship-fullpage-activegame.png"
+                        alt="Full screenshot the Battleship game during play">
+                </div>
+            </div> <!-- .col -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                <div class="mb-3">
+                    <h4 class="ml-2">Code Snippets:</h4>
+                    <img src="../../img/codepic_battleship-viewObj.png" alt="Code snippet of the view object">
+                </div>
+                <div class="mb-5" data-aos="fade-up">
+                    <img class="mb-3" src="../../img/codepic_battleship-checkOverlap.png"
+                        alt="Code snippet of the checkOverlap function">
+                </div>
+            </div> <!-- .col -->
+        </div> <!-- .row .project-screenshots -->
+
+        <div class="section cta-section">
+            <div data-aos="fade-up">
+                <h2>Like what you see?</h2>
+                <p class="col-md-6 offset-md-3 mb-5">Start the conversation now by clicking through that pretty lil' red
+                    button
+                    below.</p>
+            </div>
+            <div class="col-md-6 offset-md-3" data-aos="fade-up" data-aos-delay="150">
+                <a href="https://forms.gle/ZxTCmFK9dHoc91n6A" target="_blank"
+                    class="btn btn-accent d-flex justify-content-center cta-button">Get A Quote</a>
+            </div> <!-- container for button -->
+        </div> <!-- .cta-section -->
+
+    </main><!-- .container -->
+
+    <footer class="text-center mt-5">
+        <p>Grace Bonds | Copyright 2020</p>
+    </footer>
+
+    <!-- script to initiate the AOS library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: "true" });
+      // once:true sets the animation to only occur one time during scroll
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
