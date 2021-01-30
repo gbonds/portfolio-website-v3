@@ -271,6 +271,13 @@ img {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  /* styling for mobile and tablet devices */
+  .my-services__soft-skills {
+    font-size: .75rem;
+  }
+}
+
 /* ==========================================================================
    Portfolio Page Styles
    ========================================================================== */
